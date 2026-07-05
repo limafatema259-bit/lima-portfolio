@@ -445,4 +445,19 @@ footer{
 
 .whatsapp:hover{
     transform:scale(1.1);
+}html{
+    scroll-behavior:smooth;
+}
+
+section{
+    opacity:0;
+    transform:translateY(30px);
+    animation:fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
