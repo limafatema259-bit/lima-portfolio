@@ -11,6 +11,34 @@ body{
     font-family: Arial, sans-serif;
     background:#0f172a;
     color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#0a0f1c;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    color:#fbbf24;
+}
+
+nav a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#fbbf24;
 }
 
 /* HERO */
@@ -28,24 +56,21 @@ body{
 
 .hero h3{
     font-size:22px;
-    margin-top:10px;
     color:#cbd5e1;
 }
 
 .hero p{
-    margin-top:15px;
     color:#94a3b8;
 }
 
 .btn{
-    margin-top:25px;
+    margin-top:20px;
     padding:12px 25px;
-    border:none;
     background:#fbbf24;
-    color:black;
-    font-weight:bold;
+    border:none;
     cursor:pointer;
     border-radius:8px;
+    font-weight:bold;
 }
 
 .btn:hover{
@@ -60,7 +85,13 @@ section{
 
 h2{
     color:#fbbf24;
-    margin-bottom:20px;
+}
+
+/* ABOUT */
+.about{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
 }
 
 /* CARDS */
@@ -68,15 +99,35 @@ h2{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:20px;
+    gap:15px;
 }
 
 .card{
     background:#1e293b;
     padding:20px;
-    width:250px;
+    width:220px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin:8px;
+    padding:10px 15px;
+    background:#1e293b;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    background:#fbbf24;
+    color:black;
 }
 
 /* FOOTER */
@@ -92,69 +143,60 @@ footer{
 
 <body>
 
-<div class="hero">
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">LF</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
     <h1>Lima Fatema</h1>
     <h3>Meta Ads Strategist</h3>
-    <p>I help businesses grow using data-driven Facebook & Instagram Ads</p>
-
-    <a href="#contact">
-        <button class="btn">Work With Me</button>
-    </a>
+    <p>I help businesses grow using Facebook & Instagram Ads</p>
+    <a href="#contact"><button class="btn">Work With Me</button></a>
 </div>
 
 <!-- ABOUT -->
-<section>
+<section id="about">
     <h2>About Me</h2>
-    <p style="max-width:700px;margin:auto;color:#cbd5e1;">
-        I help businesses grow using strategic Facebook & Instagram Ads. 
-        My focus is on conversion, not just running ads — I build systems that bring real customers.
+    <p class="about">
+        I am a Meta Ads Strategist helping businesses increase sales and generate leads
+        using data-driven Facebook & Instagram advertising strategies.
     </p>
 </section>
 
-<!-- SKILLS -->
-<section>
-    <h2>Skills</h2>
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services</h2>
 
     <div class="card-container">
-        <div class="card">Meta Ads Strategy</div>
+        <div class="card">Meta Ads Management</div>
         <div class="card">Audience Research</div>
         <div class="card">Pixel Setup</div>
         <div class="card">Conversion API</div>
-        <div class="card">Campaign Optimization</div>
         <div class="card">Lead Generation</div>
+        <div class="card">Campaign Optimization</div>
     </div>
 </section>
 
-<!-- WORK -->
-<section>
-    <h2>My Work Approach</h2>
-
-    <div class="card-container">
-        <div class="card">Analyze Business</div>
-        <div class="card">Target Right Audience</div>
-        <div class="card">Build Campaign</div>
-        <div class="card">Optimize for Results</div>
-    </div>
-</section>
-
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>Let’s grow your business together 🚀</p>
 
-    <div class="contact-buttons">
-
-        <a href="https://wa.me/8801308753030" target="_blank">📱 WhatsApp</a>
-
-        <a href="mailto:limafatema2020@gmail.com">📧 Email</a>
-
-        <a href="https://www.facebook.com/share/1C5RjD19gL/" target="_blank">📘 Facebook</a>
-
-        <a href="https://www.linkedin.com/in/lima-fatema-29259a41a" target="_blank">💼 LinkedIn</a>
-
-        <a href="https://instagram.com/lima28061" target="_blank">📸 Instagram</a>
-
-    </div>
+    <a href="https://wa.me/8801308753030" target="_blank">WhatsApp</a>
+    <a href="mailto:limafatema2020@gmail.com">Email</a>
+    <a href="https://www.facebook.com/share/1C5RjD19gL/" target="_blank">Facebook</a>
+    <a href="https://www.linkedin.com/in/lima-fatema-29259a41a" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/lima28061" target="_blank">Instagram</a>
 </section>
+
+<!-- FOOTER -->
 <footer>
     © 2026 Lima Fatema | Meta Ads Strategist
 </footer>
