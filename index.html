@@ -1,226 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lima Fatema Portfolio</title>
 
-    <title>Lima Fatema | Meta Ads Strategist</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
 
-    <link rel="stylesheet" href="style.css">
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+}
+
+.hero h1{
+    font-size:50px;
+    margin:0;
+    color:#fbbf24;
+}
+
+.hero h3{
+    font-size:22px;
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#94a3b8;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    background:#fbbf24;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#f59e0b;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h2{
+    color:#fbbf24;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0a0f1c;
+    color:#94a3b8;
+}
+</style>
+
 </head>
-<a href="https://wa.me/8801308753030" class="whatsapp" target="_blank">
-    💬
-</a>
+
 <body>
-<nav>
 
-    <div class="logo">LF</div>
-    <ul>
+<!-- HERO -->
+<div class="hero">
+    <h1>Lima Fatema</h1>
+    <h3>Meta Ads Strategist</h3>
+    <p>Helping brands scale with performance marketing & data-driven Facebook Ads</p>
+    <button class="btn">Work With Me</button>
+</div>
 
-        <li><a href="#">Home</a></li>
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#services">Services</a></li>
-
-        <li><a href="#portfolio">Portfolio</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-</nav>
-    <div class="hero" id="home">
-
-        <img src="lima.jpg" class="profile" alt="Lima Fatema">
-
-       <h1>Lima Fatema</h1>
-
-<h2>Meta Ads Strategist</h2>
-
-<p>
-Helping Businesses Grow<br>
-with Data-Driven Meta Ads
-</p>
-
-<section class="stats">
-
-    <div class="stat-card">
-        <h2>20+</h2>
-        <p>Projects Completed</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>15+</h2>
-        <p>Happy Clients</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>2+</h2>
-        <p>Years Learning & Growing</p>
-    </div>
-
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <p style="max-width:700px;margin:auto;color:#cbd5e1;">
+        I help businesses grow using strategic Facebook & Instagram Ads. 
+        My focus is on conversion, not just running ads — I build systems that bring real customers.
+    </p>
 </section>
 
-        <div class="buttons">
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
 
-    <a href="#contact" class="btn">Hire Me</a>
-
-    <a href="cv.pdf" class="btn btn2" download>
-        Download CV
-    </a>
-
-</div>
-
+    <div class="card-container">
+        <div class="card">Meta Ads Strategy</div>
+        <div class="card">Audience Research</div>
+        <div class="card">Pixel Setup</div>
+        <div class="card">Conversion API</div>
+        <div class="card">Campaign Optimization</div>
+        <div class="card">Lead Generation</div>
     </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- WORK -->
+<section>
+    <h2>My Work Approach</h2>
 
-</body>
-<section class="about" id="about">
-
-    <h2>About Me</h2>
-
-   <p>
-I'm Lima Fatema, a Meta Ads Strategist specializing in Facebook & Instagram Advertising.
-
-I help businesses increase sales, generate quality leads, and improve return on ad spend through strategic campaign management, Meta Pixel, Conversion API, and audience research.
-
-My goal is to turn advertising budgets into measurable business growth.
-</p>
-
-<section class="services" id="services">
-
-    <h2>My Services</h2>
-
-    <div class="service-box">
-
-        <div class="card">
-<h3>📊 Meta Ads Management</h3>
-<p>Create and manage high-performing Facebook & Instagram ad campaigns.</p>
-</div>
-
-        <div class="card">
-<h3>🎯 Audience Research</h3>
-<p>Identify the right audience for better conversions.</p>
-</div>
-
-        <div class="card">
-<h3>⚡ Meta Pixel Setup</h3>
-<p>Track website visitors and optimize campaigns.</p>
-</div>
-
-       <div class="card">
-<h3>🔗 Conversion API Setup</h3>
-<p>Improve tracking accuracy with server-side events.</p>
-</div>
-
-       <div class="card">
-<h3>📈 Campaign Optimization</h3>
-<p>Reduce ad costs and improve ROAS.</p>
-</div>
-
-        <div class="card">
-<h3>💼 Lead Generation</h3>
-<p>Generate high-quality leads for your business.</p>
-</div>
-    
-
-    <div class="card">
-    <h3>📱 Instagram & Facebook Advertising</h3>
-    <p>Professional advertising solutions for Facebook and Instagram.</p>
-</div>
-
-<div class="card">
-    <h3>📊 Business Growth Strategy</h3>
-    <p>Helping businesses scale with data-driven marketing strategies.</p>
-</div>
-
-</section><section class="projects" id="projects">
-
-    <h2>My Projects</h2>
-
-    <div class="project-box">
-
-        <div class="project-card">
-            <h3>E-commerce Meta Ads</h3>
-            <p>Managed Facebook Ads for an online fashion store and increased sales.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Meta Pixel Setup</h3>
-            <p>Successfully installed Meta Pixel and Conversion API on WordPress websites.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Lead Generation Campaign</h3>
-            <p>Generated quality leads for service-based businesses using Meta Ads.</p>
-        </div>
-
-   </div> 
-
-</section><section class="skills">
-
-    <h2>My Skills</h2>
-
-    <div class="skill">
-
-        <p>Meta Ads</p>
-        <div class="progress">
-            <div class="progress-bar meta">95%</div>
-        </div>
-
-        <p>Meta Pixel</p>
-        <div class="progress">
-            <div class="progress-bar pixel">90%</div>
-        </div>
-
-        <p>Conversion API</p>
-        <div class="progress">
-            <div class="progress-bar api">85%</div>
-        </div>
-
-        <p>Audience Research</p>
-        <div class="progress">
-            <div class="progress-bar audience">92%</div>
-        </div>
-
+    <div class="card-container">
+        <div class="card">Analyze Business</div>
+        <div class="card">Target Right Audience</div>
+        <div class="card">Build Campaign</div>
+        <div class="card">Optimize for Results</div>
     </div>
+</section>
 
-</section><section class="contact" id="contact">
-
+<!-- CONTACT -->
+<section>
     <h2>Contact Me</h2>
-
-    <div class="contact-box">
-
-        <p>📧 <strong>Email:</strong> limafatema2020@gmail.com</p>
-
-        <p>📱 <strong>Phone:</strong> 01308753030</p>
-
-        <p>🌐 <strong>Facebook:</strong>
-            <a href="https://www.facebook.com/share/1C5RjD19gL/" target="_blank">
-                Visit Profile
-            </a>
-        </p>
-
-        <p>💼 <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/lima-fatema-29259a41a" target="_blank">
-                Connect with Me
-            </a>
-        </p>
-
-        <p>📷 <strong>Instagram:</strong>
-            <a href="https://www.instagram.com/lima28061/" target="_blank">
-                @lima28061
-            </a>
-        </p>
-
-    </div>
-
+    <p style="color:#cbd5e1;">Let’s grow your business together</p>
+    <button class="btn">Send Message</button>
 </section>
 
 <footer>
-
-    <p>© 2026 Lima Fatema | Meta Ads Strategist</p>
-
+    © 2026 Lima Fatema | Meta Ads Strategist
 </footer>
+
+</body>
+</html>
